@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML with Classes</title>
+    <style>
+        #f{
+            color:grey
+        }
+        /* Some basic CSS for styling */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        
+        }
+    </style>
+</head>
+<body>
+
+<div  class="container" id="b">
+    <div class="header">
+        <h1>Header Section</h1>
+    </div>
+
+    <div class="content" id="a">
+        <div class="box">
+            <h2>Section 1</h2>
+            <p>This is the content of section 1.</p>
+        </div>
+
+<script>
+    const el=document.getElementById("b")
+    el.id="f"
+    const el3=document.createElement("p")re
+    el3.innertext="hemanth"
+    el.after(el3)
+    el.innerHTML="<h1>i am akhil</h1>"
+    console.log(el)
+    el.addEventListener('mouseover',(e)=>{
+        console.log(e)
+        e.target.innerHTML="badboy!"})
+
+</script>
+
+</body>
+</html>
